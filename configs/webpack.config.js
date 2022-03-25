@@ -8,7 +8,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
-	assetsHash: false,
+	assetsHash: true,
 	paths: {
 		mocks: path.join(__dirname, '../mocks'),
 		src: path.join(__dirname, '../src'),

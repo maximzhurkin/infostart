@@ -55,6 +55,7 @@
   "dependencies": {
     "inputmask": "^5.0.7",
     "just-validate": "^3.5.1",
+    "moveto": "^1.8.2",
     "reset.css": "^2.0.2",
     "swiper": "^6.8.4"
   }

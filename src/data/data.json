@@ -1,20 +1,20 @@
 {
 	"menu": [
 		{
-			"title": "Главная",
-			"url": "#home"
+			"id": "hero",
+			"title": "Главная"
 		},
 		{
-			"title": "Этапы внедрения",
-			"url": "#stages"
+			"id": "stages",
+			"title": "Этапы внедрения"
 		},
 		{
-			"title": "Слайдер",
-			"url": "#slide"
+			"id": "slides",
+			"title": "Слайдер"
 		},
 		{
-			"title": "Обратная связь",
-			"url": "#feedback"
+			"id": "feedback",
+			"title": "Обратная связь"
 		}
 	]
 }

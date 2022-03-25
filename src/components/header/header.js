@@ -1,7 +1,7 @@
 import '../icon-button/icon-button'
 import '../logo/logo'
 import '../menu/menu'
-import './header-menu/header-menu'
+import headerMenu from './header-menu/header-menu'
 import headerServices from './header-services/header-services'
 import './header.styl'
 
@@ -21,6 +21,7 @@ class header {
 			})
 		})
 
+		headerMenu.init()
 		headerServices.init()
 	}
 }
