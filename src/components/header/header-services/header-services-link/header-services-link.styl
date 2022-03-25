@@ -5,13 +5,26 @@
 		margin-right 8px
 		fs(16, 24)
 		color color_default
+		transition color .25s ease-in-out
 	&__icon
 		display block
 		width 25px
 		height 25px
 		background-color color_whiteLilac
 		border-radius 50%
-		svg
-			width 24px
+		transition background-color .25s ease-in-out
+	svg
+		width 24px
+	use
+		transition fill .25s ease-in-out
+	.no-touch &:hover &__icon
+		background-color color_primary
+	.no-touch &:hover use
+		fill color_blank
+	.no-touch &:hover &__title
+		color color_primary
 
-
++mq(display_tp)
+	.header-services-link
+		&__title
+			display none

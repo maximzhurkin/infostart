@@ -7,5 +7,21 @@
 		display flex
 		align-items center
 		justify-content space-between
+	&__burger
+		display none
 	&__menu
 		margin-left 16px
+
++mq(display_tl)
+	.header
+		&__burger
+			min-width 136px
+			display block
+		&__menu
+			display none
+
++mq(display_tp)
+	.header
+		box-shadow none
+		&__burger
+			min-width auto

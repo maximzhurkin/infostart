@@ -1,0 +1,5 @@
+include ../icon/icon
+
+mixin icon-button(icon, action)
+	button.icon-button(type='button', data-action=action)
+		+icon(icon)

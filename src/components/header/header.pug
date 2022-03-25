@@ -1,10 +1,14 @@
+include ../icon-button/icon-button
 include ../logo/logo
 
 header.header
 	.container.header__container
+		.header__burger
+			+icon-button('bars', 'show-menu')
 		.header__logo
 			+logo('large')
 		.header__menu
 			include ./header-menu/header-menu
 		.header__services
 			include ./header-services/header-services
+include ../menu/menu
