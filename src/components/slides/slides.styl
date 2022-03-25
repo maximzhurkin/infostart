@@ -48,6 +48,9 @@
 		border-radius 50%
 		box-shadow shadow_main
 		pointer-events all
+		transition background-color .25s ease-in-out
+		.no-touch &:not(:disabled):hover
+			background-color color_whiteLilac
 		&:disabled
 			cursor not-allowed
 			use
