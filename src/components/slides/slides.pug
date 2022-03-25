@@ -1,0 +1,17 @@
+include ../icon/icon
+
+.slides
+	.container.slides__container
+		.slides__items
+			.swiper-container
+				.swiper-wrapper
+					each item in [1, 2, 3, 4, 5, 6, 7, 8]
+						.swiper-slide
+							.slides__item
+								include ./slides-item/slides-item
+				.swiper-pagination
+		.slides__arrows
+			button.slides__arrow.slides__arrow--prev
+				+icon('prev', 'primary')
+			button.slides__arrow.slides__arrow--next
+				+icon('next', 'primary')

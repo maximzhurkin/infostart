@@ -1,0 +1,5 @@
+nav.header-menu
+	ul.header-menu__list
+		each item in menu
+			li.header-menu__item
+				a.header-menu__link(href=item.url)= item.title

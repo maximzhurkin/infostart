@@ -1,0 +1,26 @@
+form.feedback-form
+	.feedback-form__row
+		.feedback-form__columns
+			.feedback-form__column
+				label.label(for='person') Имя и фамилия *
+				input.input(type='text', name='person', id='person', placeholder='Иван Иванов')
+			.feedback-form__column
+				label.label(for='phone') Телефон *
+				input.input(type='tel', name='phone', id='phone', placeholder='+7(9хх)ххх-хх-хх')
+	.feedback-form__row
+		.feedback-form__columns
+			.feedback-form__column
+				label.label(for='email') Почта *
+				input.input(type='email', name='email', id='email', placeholder='example@example.ru')
+			.feedback-form__column
+				label.label(for='company') Компания
+				input.input(type='text', name='company', id='company', placeholder='example')
+	.feedback-form__row
+		label.label(for='post') Должность
+		input.input(type='text', name='post', id='post', placeholder='Гл. бухгалтер')
+	.feedback-form__row
+		label.label(for='comment') Опишите задачу *
+		textarea.input(name='comment', id='comment', placeholder='Здравствуйте! Моя задача очень проста. Помогите!')
+	.feedback-form__button
+		button.button(type='submit') Отправить заявку
+	.feedback-form__terms * Пункты, обязательные для заполнения

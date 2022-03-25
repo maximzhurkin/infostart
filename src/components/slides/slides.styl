@@ -1,0 +1,67 @@
+.slides
+	margin-top -30px
+	margin-bottom 140px
+	&__container
+		position relative
+	&__items
+		margin-left auto
+		margin-right auto
+		max-width	1068px
+		position relative
+		&:before,
+		&:after
+			content ''
+			display block
+			width 16px
+			height 100%
+			position absolute
+			top 0
+			z-index 2
+		&:before
+			left 0
+			background-image linear-gradient(90deg, color_blank 0%, rgba(color_blank, 0) 100%)
+		&:after
+			right 0
+			background-image linear-gradient(90deg, rgba(color_blank, 0) 0%, color_blank 100%)
+	&__item
+		padding-top 28px
+		padding-bottom 46px
+		gap(36px)
+	&__arrows
+		margin-top -(64px / 2)
+		position absolute
+		display flex
+		justify-content space-between
+		top 48%
+		left gap_laptop
+		right gap_laptop
+		z-index 3
+		pointer-events none
+	&__arrow
+		cursor pointer
+		padding 14px
+		display block
+		width 64px
+		height 64px
+		background-color color_blank
+		border none
+		border-radius 50%
+		box-shadow shadow_main
+		pointer-events all
+		&:disabled
+			cursor not-allowed
+			use
+				fill color_iron
+	.swiper-container-horizontal > .swiper-pagination-bullets
+		bottom 0
+		height 30px
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+		margin 0 6px
+	.swiper-pagination-bullet
+		width 25px
+		height 4px
+		background-color color_melrose
+		border-radius 2px
+		opacity .5
+	.swiper-pagination-bullet-active
+		opacity 1

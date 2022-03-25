@@ -1,0 +1,11 @@
+mixin logo(size)
+	- const sizeClass = size ? 'logo--'+size : ''
+
+	a.logo(class=sizeClass, href='#')
+		img.image(
+			src=path_assets+'/images/logo.png',
+			srcset=path_assets+'/images/logo.png 2x'
+			width='198',
+			height='50',
+			alt='Company'
+		)

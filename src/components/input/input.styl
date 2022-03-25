@@ -1,0 +1,22 @@
+.input
+	gap(16px)
+	display block
+	width 100%
+	height 45px
+	font-family font_default
+	font-size (14 / 16em)
+	border 1px solid color_botticelli
+	border-radius 8px
+	outline none
+	transition border-color .25s ease-in-out
+	+placeholder()
+		color color_iron
+	&:focus
+		border-color color_primary
+	&--invalid,
+	&--invalid:focus
+		border-color color_mandy
+textarea.input
+	pad(12px)
+	min-height 90px
+	resize vertical
