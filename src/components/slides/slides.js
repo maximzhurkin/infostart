@@ -9,6 +9,7 @@ class slides {
 
 		new Swiper('.swiper-container', {
 			slidesPerView: 1,
+			cssMode: (navigator.userAgent.match('CriOS')) ? true : false,
 			navigation: {
 				prevEl: ".slides__arrow--prev",
 				nextEl: ".slides__arrow--next",

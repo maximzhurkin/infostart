@@ -15,6 +15,9 @@
 		animation fade .25s 1
 	&--active &__side
 		animation slide .25s 1
+	.crios &--active &__overlay,
+	.crios &--active &__side
+		animation none
 	&__overlay,
 	&__side
 		position absolute
@@ -29,6 +32,7 @@
 		gap(30px)
 		width 258px
 		background-color color_blank
+		overflow-y auto
 	&__header,
 	&__list
 		margin-bottom 48px

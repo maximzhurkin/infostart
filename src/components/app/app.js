@@ -32,10 +32,19 @@ class app {
 
 		root.classList.add((this.getTouch()) ? 'touch' : 'no-touch')
 	}
+	static getCrios() {
+		return (navigator.userAgent.match('CriOS')) ? true : false
+	}
+	static setCriosClass() {
+		if (this.getCrios()) {
+			document.documentElement.classList.add('crios')
+		}
+	}
 
 	static init () {
 		this.setWebpClass()
 		this.setTouchClass()
+		this.setCriosClass()
 	}
 }
 export default app
