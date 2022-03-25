@@ -17,11 +17,14 @@
 		width 24px
 	use
 		transition fill .25s ease-in-out
-	.no-touch &:hover &__icon
+	.no-touch &:hover &__icon,
+	&--active &__icon
 		background-color color_primary
-	.no-touch &:hover use
+	.no-touch &:hover use,
+	&--active use
 		fill color_blank
-	.no-touch &:hover &__title
+	.no-touch &:hover &__title,
+	&--active &__title
 		color color_primary
 
 +mq(display_tp)

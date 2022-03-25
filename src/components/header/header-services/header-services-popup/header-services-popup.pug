@@ -1,2 +1,8 @@
+include ./header-services-popup-item/header-services-popup-item
+
 .header-services-popup
-	.container.header-services-popup__container header-services-popup...
+	.header-services-popup__container
+		.header-services-popup__items
+			each index in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+				.header-services-popup__item
+					+header-services-popup-item(index)

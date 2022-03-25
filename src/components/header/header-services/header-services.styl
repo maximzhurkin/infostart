@@ -1,3 +1,13 @@
+@import "../../../styles/animations/popup"
+
 .header-services
+	position relative
 	&__popup
+		position absolute
+		top 32px
+		right 0
+		width 258px
 		display none
+		&--active
+			display block
+			animation popup .25s 1

@@ -2,7 +2,7 @@ import '../icon-button/icon-button'
 import '../logo/logo'
 import '../menu/menu'
 import './header-menu/header-menu'
-import './header-services/header-services'
+import headerServices from './header-services/header-services'
 import './header.styl'
 
 class header {
@@ -20,6 +20,8 @@ class header {
 				menu.classList.remove(menuClassActive)
 			})
 		})
+
+		headerServices.init()
 	}
 }
 export default header

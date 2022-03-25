@@ -1,0 +1,25 @@
+name: Node.js CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 10.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - run: npm i
+    - run: npm run build && npm run pack
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: maximzhurkin.myjino.ru
+        username: maximzhurkin_infostart
+        password: sJMuae*K568r
+        local-dir: ./dist/
+        server-dir: ./
