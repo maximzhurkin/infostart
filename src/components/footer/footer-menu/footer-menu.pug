@@ -1,0 +1,31 @@
+-
+	const footerMenu = [
+		{
+			"title": "Главная",
+			"url": "#home"
+		},
+		{
+			"title": "Этапы внедрения",
+			"url": "#stages"
+		},
+		{
+			"title": "Слайдер",
+			"url": "#slide"
+		},
+		{
+			"title": "Обратная связь",
+			"url": "#feedback"
+		},
+		{
+			"title": "Трудовая деятельность",
+			"url": "#"
+		}
+	]
+
+include ./footer-menu-list/footer-menu-list
+
+.footer-menu
+	.footer-menu__list
+		+footer-menu-list(footerMenu)
+	.footer-menu__list
+		+footer-menu-list(footerMenu)

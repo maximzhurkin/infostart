@@ -4,6 +4,7 @@ import hero from '../../components/hero/hero'
 import stages from '../../components/stages/stages'
 import slides from '../../components/slides/slides'
 import feedback from '../../components/feedback/feedback'
+import footer from '../../components/footer/footer'
 
 document.addEventListener('DOMContentLoaded', function () {
 	app.init()
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	stages.init()
 	slides.init()
 	feedback.init()
+	footer.init()
 })

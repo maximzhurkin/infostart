@@ -1,2 +1,9 @@
 .footer
-	.container.footer__container= footer.copyrights
+	.container.footer__container
+		.footer__main
+			.footer__menu
+				include ./footer-menu/footer-menu
+			.footer__contacts
+				include ./footer-contacts/footer-contacts
+		.footer__copyright
+			include ./footer-copyright/footer-copyright

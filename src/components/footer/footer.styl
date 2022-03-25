@@ -1,6 +1,15 @@
 .footer
-	margin-top auto
-	pad(32px)
-	fs(13, 20)
-	color color_blank
-	background-color darken(color_primary, 60%)
+	box-shadow shadow_second
+	&__container,
+	&__contacts
+		gap(gap_laptop / 2)
+	&__container
+		pad(72px)
+	&__main
+		margin-bottom 84px
+		display flex
+		justify-content space-between
+	&__menu
+		column(8)
+	&__contacts
+		column(4)

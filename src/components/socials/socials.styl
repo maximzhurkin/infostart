@@ -1,0 +1,17 @@
+.socials
+	display flex
+	&__item:not(:last-child)
+		margin-right 14px
+	&__button
+		display block
+		width 24px
+		height 24px
+		border-radius 50%
+		background-color color_whiteLilac
+		transition background-color .25s ease-in-out
+		use
+			transition fill .25s ease-in-out
+		.no-touch &:hover
+			background-color color_primary
+			use
+				fill color_blank
