@@ -58,10 +58,35 @@
 	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
 		margin 0 6px
 	.swiper-pagination-bullet
-		width 25px
+		width 100%
+		max-width 25px
 		height 4px
 		background-color color_melrose
 		border-radius 2px
 		opacity .5
 	.swiper-pagination-bullet-active
 		opacity 1
+
++mq(display_ml)
+	.slides
+		margin-top 0
+		margin-bottom 120px
+		&__container
+			gap(0)
+		&__items
+			margin-bottom 24px
+		&__item
+			gap(24px)
+		&__arrows
+			margin-top 0
+			position relative
+			top auto
+			left auto
+			right auto
+			justify-content center
+		&__arrow
+			margin-left 20px
+			margin-right 20px
+			padding 12px
+			width 42px
+			height 42px

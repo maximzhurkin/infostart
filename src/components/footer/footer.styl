@@ -13,3 +13,29 @@
 		column(8)
 	&__contacts
 		column(4)
+
++mq(display_tp)
+	.footer
+		&__main
+			flex-direction column
+		&__menu,
+		&__contacts
+			column(12)
+		&__menu
+			margin-bottom 40px
+			padding-bottom 32px
+			position relative
+			&:after
+				content ''
+				display block
+				height 2px
+				position absolute
+				left (gap_laptop / 2)
+				right (gap_laptop / 2)
+				bottom 0
+				background-color color_whiteLilac
+
++mq(display_ml)
+	.footer
+		&__main
+			margin-bottom 40px

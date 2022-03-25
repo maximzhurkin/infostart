@@ -13,3 +13,25 @@
 		padding-top 55px
 	&__image
 		padding-top 16px
+
++mq(display_tp)
+	.stages
+		&__container
+			flex-direction column
+		&__info,
+		&__image
+			padding-top 0
+		&__info
+			margin-bottom 16px
+			column(12)
+			order 1
+		&__image
+			margin-left auto
+			margin-right auto
+			width 100%
+			max-width 480px
+			order 2
+
++mq(display_ml)
+	.stages
+		margin-bottom 10px

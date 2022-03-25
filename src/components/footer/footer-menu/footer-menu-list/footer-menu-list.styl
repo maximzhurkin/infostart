@@ -8,3 +8,10 @@
 		transition color .25s ease-in-out
 		.no-touch &:hover
 			color color_primary
+
++mq(display_ml)
+	.footer-menu-list
+		&__item:not(:last-child)
+			margin-bottom 14px
+		&__link
+			fs(10, 12)

@@ -12,3 +12,21 @@
 	&__info
 		margin-bottom 120px
 		padding-top 32px
+
++mq(display_tp)
+	.hero
+		&__container
+			flex-direction column
+		&__info
+			margin-bottom 16px
+			padding-top 0
+			column(12)
+		&__image
+			margin-left auto
+			margin-right auto
+			width 100%
+			max-width 480px
+
++mq(display_ml)
+	.hero
+		margin-bottom 30px
