@@ -18,8 +18,8 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: maximzhurkin.myjino.ru
-        username: maximzhurkin_infostart
-        password: sJMuae*K568r
+        server: ${{ secrets.SERVER }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
         local-dir: ./dist/
         server-dir: ./
