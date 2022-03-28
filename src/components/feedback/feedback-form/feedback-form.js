@@ -1,5 +1,4 @@
 import JustValidate from 'just-validate'
-// import Inputmask from 'inputmask'
 import IMask from 'imask'
 import '../../label/label'
 import '../../input/input'
@@ -12,13 +11,6 @@ class feedbackForm {
 		IMask(document.querySelector('input[type=tel]'), {
 			mask: '+{7}(000)000-00-00'
 		});
-
-		// const mask = new Inputmask('+7(999)999-99-99', {
-		// 	showMaskOnHover: false,
-		// 	jitMasking: true
-		// })
-
-		// mask.mask(document.querySelector('input[type=tel]'))
 
 		const validation = new JustValidate('.feedback-form', {
 			errorFieldCssClass: 'input--invalid',
