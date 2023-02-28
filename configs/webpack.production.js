@@ -6,6 +6,7 @@ const AssetsPlugin = require("assets-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const { merge } = require("webpack-merge");
 const config = require("./webpack.config.js");
+const configJson = require("../config")
 
 module.exports = merge(config, {
   mode: "production",
@@ -53,7 +54,7 @@ module.exports = merge(config, {
   },
   plugins: [
     new AssetsPlugin({
-      filename: "./dist/assets/assets.json",
+      filename: `./dist/${configJson.paths.assets}/assets.json`,
       prettyPrint: true,
       includeAllFileTypes: false,
       entrypoints: true,

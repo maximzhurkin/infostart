@@ -2,7 +2,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { merge } = require("webpack-merge");
 const config = require("./webpack.config.js");
-const mocks = require("../mocks/mocks.js");
+const mock = require("../mock/boot.js");
 
 module.exports = merge(config, {
   mode: "development",
@@ -13,11 +13,11 @@ module.exports = merge(config, {
     publicPath: "/",
     hot: true,
     before: function (app) {
-      mocks.forEach((route) => {
+      mock.forEach((route) => {
         app.all(route, function (req, res) {
           setTimeout(() => {
             // Simulating server response delay 300ms
-            res.json(require("../mocks" + route + "/data.json"));
+            res.json(require("../mock" + route + "/data.json"));
           }, 300);
         });
       });

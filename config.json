@@ -1,0 +1,9 @@
+{
+  "assetsHash": true,
+  "paths": {
+    "mock": "../mock",
+    "src": "../src",
+    "dist": "../dist",
+    "assets": "bitrix/templates/infostart/assets"
+  }
+}

@@ -7,14 +7,15 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const data = require("../src/data/boot")
+const configJson = require("../config")
 const config = {
-  assetsHash: true,
+  assetsHash: configJson.assetsHash,
   data: data,
   paths: {
-    mock: path.join(__dirname, "../mock"),
-    src: path.join(__dirname, "../src"),
-    dist: path.join(__dirname, "../dist"),
-    assets: "bitrix/templates/infostart/assets",
+    mock: path.join(__dirname, configJson.paths.mock),
+    src: path.join(__dirname, configJson.paths.src),
+    dist: path.join(__dirname, configJson.paths.dist),
+    assets: configJson.paths.assets,
   },
 };
 
