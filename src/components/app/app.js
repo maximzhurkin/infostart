@@ -1,3 +1,4 @@
+import WebFont from 'webfontloader';
 import 'reset.css'
 import './app.styl'
 
@@ -40,11 +41,18 @@ class app {
 			document.documentElement.classList.add('crios')
 		}
 	}
-
+	static loadFonts() {
+		WebFont.load({
+			google: {
+				families: ['Inter:400,600,700,800:latin,cyrillic&display=swap'],
+			},
+		});
+	}
 	static init () {
 		this.setWebpClass()
 		this.setTouchClass()
 		this.setCriosClass()
+		this.loadFonts()
 	}
 }
 export default app

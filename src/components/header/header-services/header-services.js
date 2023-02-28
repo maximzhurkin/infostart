@@ -1,3 +1,4 @@
+import '@/assets/styles/animations/popup.styl'
 import './header-services-link/header-services-link'
 import './header-services-popup/header-services-popup'
 import './header-services.styl'

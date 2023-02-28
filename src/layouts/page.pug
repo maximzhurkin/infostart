@@ -1,15 +1,3 @@
-include ../components/app/config
-
--
-	const headConfig = {
-		fonts: [
-			'inter-400-regular',
-			'inter-600-semibold',
-			'inter-700-bold',
-			'inter-800-extrabold',
-		],
-	}
-
 block data
 	- const heading = ''
 
@@ -21,9 +9,5 @@ html(lang="ru")
 		meta(name="description", content="")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(name="format-detection", content="telephone=no")
-		meta(http-equiv="Content-Security-Policy", content="upgrade-insecure-requests")
-		include ../static/favicon/favicon.html
-		each font in headConfig.fonts
-			link(rel="preload" href=path_assets+"/fonts/"+font+".woff2" as="font" crossorigin="anonymous")
 	body
 		block body
